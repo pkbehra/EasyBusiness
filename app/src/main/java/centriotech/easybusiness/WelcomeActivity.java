@@ -47,19 +47,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
                     break;
 
-
-                case R.id.navigation_dashboard:
-
-
-//                    Dashboard dashboard = new Dashboard();
-//                    FragmentManager fmmms = getSupportFragmentManager();
-//                    fmmms.beginTransaction().replace(R.id.frame, dashboard).addToBackStack("Teacher").commit();
-
-
-                    Toast.makeText(getApplicationContext(), "Dashboard", Toast.LENGTH_SHORT).show();
-
-
-                    break;
                 case R.id.navigation_profile:
 
                     Adminprofile adminprofile = new Adminprofile();
