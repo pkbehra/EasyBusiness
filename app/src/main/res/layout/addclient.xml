@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:scrollbars="none">
 
 
@@ -231,19 +232,6 @@
             </LinearLayout>
 
 
-            <Button
-                android:id="@+id/slelect_userstatus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/calender"
-                android:focusedByDefault="false"
-                android:text="Date of Registration"
-                android:textAllCaps="false"
-                android:paddingStart="10dp"
-                android:textAlignment="viewStart"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/black"
-                />
 
 
             <androidx.cardview.widget.CardView

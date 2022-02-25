@@ -60,7 +60,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/im1"
                         android:layout_gravity="center"
-                        android:text="Users"
+                        android:text="Agents"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textSize="12sp"
