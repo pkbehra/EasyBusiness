@@ -34,7 +34,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/logo3"
+                android:src="@drawable/esclients"
                 />
 
             <TextView
