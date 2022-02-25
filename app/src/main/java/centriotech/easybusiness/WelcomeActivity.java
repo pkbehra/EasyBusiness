@@ -51,7 +51,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
                     Adminprofile adminprofile = new Adminprofile();
                     FragmentManager fmmm1 = getSupportFragmentManager();
-                    fmmm1.beginTransaction().replace(R.id.frame, adminprofile).commit();
+                    fmmm1.beginTransaction().replace(R.id.frame, adminprofile).addToBackStack("Admin").commit();
 
 
                     break;
