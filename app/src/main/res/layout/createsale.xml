@@ -87,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="1dp"
                             android:gravity="center"
-                            android:text="New Agent"
+                            android:text="New Client"
                             android:textColor="@color/colorWhite"
                             android:textSize="10sp" />
 

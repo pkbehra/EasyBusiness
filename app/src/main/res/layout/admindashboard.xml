@@ -7,18 +7,18 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:text="Update Daily Price"
 
-        android:textAllCaps="false"
-        android:textColor="@color/colorRed"
-        android:textSize="18dp" />
-
+       <TextView
+           android:id="@+id/tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="50dp"
+           android:gravity="center"
+           android:text="Update Daily Price"
+           android:textAllCaps="false"
+           android:textColor="@color/colorRed"
+           android:textSize="18dp" />
 
     <RelativeLayout
         android:id="@+id/rlCart"
@@ -51,17 +51,21 @@
                 android:src="@drawable/onion" />
 
             <EditText
+                android:id="@+id/onion_et"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:hint="Onion Price"
                 android:inputType="number"
-                android:maxLines="1"
                 android:maxLength="3"
-                android:textSize="12dp">
+                android:maxLines="1"
+                android:textSize="12dp"
+                >
 
             </EditText>
+
+
 
         </LinearLayout>
 

@@ -98,6 +98,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/Print"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -109,7 +110,7 @@
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
-                    android:id="@+id/next"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -362,6 +363,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/submit"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
@@ -385,7 +387,7 @@
 
 
                     <TextView
-                        android:id="@+id/submit"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"

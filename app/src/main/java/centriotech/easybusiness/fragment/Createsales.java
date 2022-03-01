@@ -50,8 +50,8 @@ public class Createsales extends Fragment {
             public void onClick(View view) {
 
                 FragmentManager fm = getFragmentManager();
-                Addagent addagent = new Addagent();
-                fm.beginTransaction().replace(R.id.frame, addagent).addToBackStack("addagent").commit();
+                Addclient addclient = new Addclient();
+                fm.beginTransaction().replace(R.id.frame, addclient).addToBackStack("addagent").commit();
             }
         });
         return view;
