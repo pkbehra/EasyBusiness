@@ -27,7 +27,14 @@ public class Viewclients extends Fragment {
         view_manage_client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Manage Clients", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getActivity(), "Manage Clients", Toast.LENGTH_SHORT).show();
+
+
+                FragmentManager fm = getFragmentManager();
+                Manageclients manageclients = new Manageclients();
+                fm.beginTransaction().replace(R.id.frame, manageclients).addToBackStack("addclient").commit();
+
+
 
             }
         });

@@ -27,7 +27,11 @@ public class Viewsales extends Fragment {
         view_manage_sales.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Manage Sales", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), "Manage Sales", Toast.LENGTH_SHORT).show();
+                FragmentManager fm = getFragmentManager();
+                Managesales managesales = new Managesales();
+                fm.beginTransaction().replace(R.id.frame, managesales).addToBackStack("addclient").commit();
+
 
             }
         });

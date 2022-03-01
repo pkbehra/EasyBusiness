@@ -28,7 +28,11 @@ public class Viewconsignment extends Fragment {
         view_manage_consignment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Manage Consignment", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), "Manage Consignment", Toast.LENGTH_SHORT).show();
+                FragmentManager fm = getFragmentManager();
+                Manageconsignment manageconsignment = new Manageconsignment();
+                fm.beginTransaction().replace(R.id.frame, manageconsignment).addToBackStack("addclient").commit();
+
 
             }
         });

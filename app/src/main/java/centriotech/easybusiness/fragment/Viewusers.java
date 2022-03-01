@@ -28,7 +28,11 @@ public class Viewusers extends Fragment {
         view_manage_agent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Manage Agents", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), "Manage Agents", Toast.LENGTH_SHORT).show();
+                FragmentManager fm = getFragmentManager();
+                Manageagents manageagents = new Manageagents();
+                fm.beginTransaction().replace(R.id.frame, manageagents).addToBackStack("addclient").commit();
+
 
             }
         });
