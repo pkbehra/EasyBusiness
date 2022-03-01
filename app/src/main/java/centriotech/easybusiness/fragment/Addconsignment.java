@@ -125,24 +125,21 @@ public class Addconsignment extends Fragment {
     private void showAlertDialog2() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
         alertDialog.setTitle("Select Packaging Type");
-        String[] items = {"Gunny", "Bag","Carets"};
+        String[] items = {"Gunny Bags","Carets"};
         int checkedItem = 1;
         alertDialog.setSingleChoiceItems(items, checkedItem, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0:
-                        packagetype.setText("Gunny");
+                        packagetype.setText("Gunny Bags");
                         dialog.dismiss();
                         break;
                     case 1:
-                        packagetype.setText("Bag");
-                        dialog.dismiss();
-                        break;
-                    case 2:
                         packagetype.setText("Carets");
                         dialog.dismiss();
                         break;
+
 
                 }
             }

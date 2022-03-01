@@ -268,7 +268,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusedByDefault="false"
-                        android:hint="Gross Weight(Tons)"
+                        android:hint="Gross Weight (Kg)"
                         android:maxLength="10"
                         android:inputType="number"
                         android:maxLines="1"
