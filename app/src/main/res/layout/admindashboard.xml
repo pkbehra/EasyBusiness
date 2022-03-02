@@ -48,7 +48,7 @@
                 android:background="@color/colorWhite"
                 android:padding="3dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/onion" />
+                android:src="@drawable/onion2" />
 
             <EditText
                 android:id="@+id/onion_et"
@@ -88,7 +88,7 @@
                 android:background="@color/colorWhite"
                 android:padding="3dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/tomato" />
+                android:src="@drawable/tomatoes2" />
 
             <EditText
                 android:layout_width="90dp"
@@ -216,7 +216,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/agent" />
+                    android:src="@drawable/agent2" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -266,7 +266,18 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/im1"
                     android:layout_gravity="center"
-                    android:text="Consignment Truck"
+                    android:text="Consignment"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/im1"
+                    android:layout_gravity="center"
+                    android:text="Trucks"
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="12sp"
@@ -343,7 +354,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/esclients" />
+                    android:src="@drawable/client4" />
 
                 <TextView
                     android:layout_width="wrap_content"
