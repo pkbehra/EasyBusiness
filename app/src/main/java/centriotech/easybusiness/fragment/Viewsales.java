@@ -41,8 +41,8 @@ public class Viewsales extends Fragment {
             public void onClick(View view) {
 
                 FragmentManager fm = getFragmentManager();
-                Createsales createsales = new Createsales();
-                fm.beginTransaction().replace(R.id.frame, createsales).addToBackStack("addconsignment").commit();
+                Createselectclient createselectclient = new Createselectclient();
+                fm.beginTransaction().replace(R.id.frame, createselectclient).addToBackStack("addconsignment").commit();
 
 
             }

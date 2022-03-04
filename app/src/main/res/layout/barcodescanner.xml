@@ -19,6 +19,7 @@
         android:layout_centerVertical="true" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/submit_barcode"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center"

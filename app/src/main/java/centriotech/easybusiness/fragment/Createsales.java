@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -19,41 +20,47 @@ import centriotech.easybusiness.ScannedBarcodeActivity;
 
 public class Createsales extends Fragment {
 
-    RelativeLayout newclientadd,scanQR;
+    CardView sale_client, scanQR, addsale_next;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.createsale, container, false);
 
-        newclientadd=view.findViewById(R.id.newclientadd);
 
-        scanQR=view.findViewById(R.id.scanQR);
+        scanQR = view.findViewById(R.id.scanQR);
+
+        sale_client = view.findViewById(R.id.sale_client);
+        addsale_next = view.findViewById(R.id.addsale_next);
 
         scanQR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-              //  Toast.makeText(getActivity(), "Scan QR Code", Toast.LENGTH_SHORT).show();
+//                FragmentManager fm = getFragmentManager();
+//                Barcodescanner barcodescanner = new Barcodescanner();
+//                fm.beginTransaction().replace(R.id.frame, barcodescanner).addToBackStack("addagent").commit();
 
+                sale_client.setVisibility(View.VISIBLE);
+                addsale_next.setVisibility(View.VISIBLE);
 
-                Intent intent = new Intent(getActivity(), ScannedBarcodeActivity.class);
-
-                startActivity(intent);
-                // finish();
 
             }
         });
 
-        newclientadd.setOnClickListener(new View.OnClickListener() {
+        addsale_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                FragmentManager fm = getFragmentManager();
-                Addclient addclient = new Addclient();
-                fm.beginTransaction().replace(R.id.frame, addclient).addToBackStack("addagent").commit();
+                sale_client.setVisibility(View.GONE);
+                addsale_next.setVisibility(View.GONE);
+                Toast.makeText(getActivity(), "Added to Daily Sale Record", Toast.LENGTH_SHORT).show();
+
+
             }
         });
+
+
         return view;
     }
-    }
+}
