@@ -32,6 +32,7 @@ public class Addconsignment extends Fragment {
         packagetype=view.findViewById(R.id.packagetype);
 
 
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

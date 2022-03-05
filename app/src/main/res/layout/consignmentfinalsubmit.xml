@@ -4,15 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
-    android:scrollbars="none">
+    android:orientation="vertical"
+  >
 
 
     <LinearLayout
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/colorWhite"
         android:gravity="center"
         android:orientation="vertical"
@@ -24,8 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -55,14 +57,20 @@
                 android:textColor="@color/colorRed"
                 android:textSize="15dp" />
 
-            <!-- Login progress -->
-            <ProgressBar
-                android:id="@+id/login_progress"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/oniontype"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:visibility="gone" />
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:focusedByDefault="false"
+                android:text="Select Onion Type"
+                android:textAllCaps="false"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="viewStart"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/black"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -206,7 +214,7 @@
                                 android:textStyle="bold" />
 
                             <Button
-                                android:id="@+id/btnDelete1"
+                                android:id="@+id/p1"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
@@ -235,7 +243,7 @@
                                 android:textStyle="bold" />
 
                             <Button
-                                android:id="@+id/btnDeletes1"
+                                android:id="@+id/d1"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
@@ -316,7 +324,7 @@
                                 android:textStyle="bold" />
 
                             <Button
-                                android:id="@+id/btnDelete"
+                                android:id="@+id/p2"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
@@ -332,7 +340,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/cartProdNames"
+                                android:id="@+id/cartProdNamesa"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -345,7 +353,7 @@
                                 android:textStyle="bold" />
 
                             <Button
-                                android:id="@+id/btnDeletes"
+                                android:id="@+id/d2"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
@@ -362,21 +370,127 @@
             </androidx.cardview.widget.CardView>
 
 
+            <RelativeLayout
+                android:id="@+id/rlCart1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llCart1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivcartProda"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:padding="3dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/analytics" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/llCart1a"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cartProdNamea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Total Weight"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="500 KG"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cartProdNames"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Total Cost"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="50K"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/submit"
+                android:id="@+id/review_submit"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="100dp"
                 app:cardBackgroundColor="@color/purple_200"
                 app:cardCornerRadius="10dp">
 
-
                 <RelativeLayout
-                    android:id="@+id/Final"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -392,14 +506,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:gravity="center"
-                        android:text="Final Submit"
+                        android:text="Review and Submit"
                         android:textColor="@color/colorWhite"
                         android:textSize="18sp" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-
         </LinearLayout>
     </LinearLayout>
+
+
 </ScrollView>
