@@ -1,10 +1,13 @@
 package centriotech.easybusiness.fragment;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -21,12 +24,16 @@ public class Createselectclient extends Fragment {
     CardView client_next;
     TextView newclientadd;
 
+    Button producttype;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.createselectclient, container, false);
 
         newclientadd=view.findViewById(R.id.newclientadd);
+
+        producttype=view.findViewById(R.id.producttype);
 
         client_next=view.findViewById(R.id.client_next);
 
@@ -37,6 +44,14 @@ public class Createselectclient extends Fragment {
                 FragmentManager fm = getFragmentManager();
                 Createsales createsales = new Createsales();
                 fm.beginTransaction().replace(R.id.frame, createsales).addToBackStack("addagent").commit();
+
+            }
+        });
+        producttype.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                showAlertDialog();
 
             }
         });
@@ -51,5 +66,36 @@ public class Createselectclient extends Fragment {
             }
         });
         return view;
+    }
+
+    private void showAlertDialog() {
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        alertDialog.setTitle("Select Product Type");
+        String[] items = {"Onion", "Potato","Tomato"};
+        int checkedItem = 1;
+        alertDialog.setSingleChoiceItems(items, checkedItem, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which) {
+                    case 0:
+                        producttype.setText("Onion");
+                        dialog.dismiss();
+                        break;
+                    case 1:
+                        producttype.setText("Potato");
+                        dialog.dismiss();
+                        break;
+                    case 2:
+                        producttype.setText("Tomato");
+                        dialog.dismiss();
+                        break;
+
+                }
+            }
+        });
+        AlertDialog alert = alertDialog.create();
+        alert.setCanceledOnTouchOutside(false);
+        alert.show();
     }
 }

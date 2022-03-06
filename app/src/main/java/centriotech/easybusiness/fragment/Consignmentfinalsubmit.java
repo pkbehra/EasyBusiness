@@ -59,6 +59,12 @@ public class Consignmentfinalsubmit extends Fragment {
         review_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                FragmentManager fm = getFragmentManager();
+                Consignmentfreview consignmentfreview = new Consignmentfreview();
+                fm.beginTransaction().replace(R.id.frame, consignmentfreview).addToBackStack("addclient").commit();
+
+
             }
 
         });

@@ -251,6 +251,15 @@
         </androidx.cardview.widget.CardView>
 
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/green"
+            android:layout_height="2dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -481,7 +490,14 @@
 
         </androidx.cardview.widget.CardView>
 
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/green"
+            android:layout_height="2dp"/>
 
         <RelativeLayout
             android:id="@+id/rlCart1a"
@@ -593,7 +609,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/review_submit"
+            android:id="@+id/sale_review_submit"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

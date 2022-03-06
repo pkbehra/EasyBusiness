@@ -4,18 +4,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:scrollbars="none"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-  >
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="160dp"
+    android:background="@color/grey"
+    android:padding="1dp"
+    android:scrollbars="none">
 
 
     <LinearLayout
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorWhite"
+        android:background="@color/bg_grey"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -26,8 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -40,133 +42,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="Truck No.   : MH 04 CH1765"
+                android:text="Review and Submit"
                 android:textAllCaps="false"
-                android:textColor="@color/colorRed"
-                android:textSize="15dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:text="Agency Name  : CENTRIOTECH"
-                android:textAllCaps="false"
-                android:textColor="@color/colorRed"
-                android:textSize="15dp" />
-
-            <Button
-                android:id="@+id/oniontype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
-                android:focusedByDefault="false"
-                android:text="Select Onion Type"
-                android:textAllCaps="false"
-                android:paddingStart="10dp"
-                android:layout_marginTop="5dp"
-                android:textAlignment="viewStart"
-                android:background="@drawable/custom_button"
-                android:textColor="@color/black"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:orientation="horizontal">
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/name_text_input"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.45"
-                    android:textColorHint="@color/black"
-                    android:textSize="10dp"
-                    app:hintTextAppearance="@style/HintTextStyle">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tran_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:focusedByDefault="false"
-                        android:hint="Weight"
-                        android:inputType="number"
-                        android:maxLength="25"
-                        android:maxLines="1"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Print"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"
-                app:cardBackgroundColor="@color/purple_200"
-                app:cardCornerRadius="10dp">
-
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="7dp"
-                    android:gravity="center">
-
-                    <ProgressBar
-                        android:id="@+id/progress_bar_sending_otps"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_gravity="center"
-                        android:visibility="gone" />
-
-                    <TextView
-                        android:id="@+id/tvnect"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center"
-
-                        android:text="Print"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/green"
-                android:layout_height="2dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:text="Consignment Record"
                 android:textColor="@color/colorRed"
                 android:textSize="20dp" />
-
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/crdroomlist"
@@ -174,7 +56,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
                 android:background="#d0343e52"
                 android:elevation="17dp"
                 app:cardCornerRadius="2dp"
@@ -237,6 +118,7 @@
                                 android:id="@+id/p1"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
+                                android:visibility="gone"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_baseline_print_24" />
 
@@ -267,6 +149,7 @@
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
+                                android:visibility="gone"
                                 android:background="@drawable/ic_delete_black_24dp" />
 
 
@@ -348,6 +231,7 @@
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
+                                android:visibility="gone"
                                 android:background="@drawable/ic_baseline_print_24" />
 
 
@@ -377,6 +261,7 @@
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
                                 android:layout_marginTop="5dp"
+                                android:visibility="gone"
                                 android:background="@drawable/ic_delete_black_24dp" />
 
 
@@ -389,15 +274,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/green"
-                android:layout_height="2dp"/>
 
             <RelativeLayout
                 android:id="@+id/rlCart1a"
@@ -504,46 +380,106 @@
                 </LinearLayout>
             </RelativeLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/review_submit"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="100dp"
-                app:cardBackgroundColor="@color/purple_200"
-                app:cardCornerRadius="10dp">
-
-                <RelativeLayout
-
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                </CheckBox>
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select Checkbox to final Submit"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/salesub"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="7dp"
-                    android:gravity="center">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/colorRed"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/addagent"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/salecancel"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/colorRed"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/addagent1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center">
 
 
-                    <TextView
+                        <TextView
+                            android:id="@+id/tvLogout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Cancal"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp" />
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center"
-                        android:text="Review and Submit"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="18sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
 
         </LinearLayout>
     </LinearLayout>
-
-
 </ScrollView>

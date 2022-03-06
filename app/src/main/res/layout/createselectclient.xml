@@ -67,7 +67,22 @@
             </LinearLayout>
         </LinearLayout>
 
-
+        <Button
+            android:id="@+id/producttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:focusedByDefault="false"
+            android:text="Select Product Type"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="viewStart"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/black"
+            />
 
 
         <androidx.cardview.widget.CardView
@@ -76,7 +91,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
             app:cardBackgroundColor="@color/purple_200"

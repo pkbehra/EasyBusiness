@@ -20,7 +20,7 @@ import centriotech.easybusiness.ScannedBarcodeActivity;
 
 public class Createsales extends Fragment {
 
-    CardView sale_client, scanQR, addsale_next;
+    CardView sale_client, scanQR, addsale_next,sale_review_submit;
 
     @Nullable
     @Override
@@ -32,6 +32,7 @@ public class Createsales extends Fragment {
 
         sale_client = view.findViewById(R.id.sale_client);
         addsale_next = view.findViewById(R.id.addsale_next);
+        sale_review_submit = view.findViewById(R.id.sale_review_submit);
 
         scanQR.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,16 @@ public class Createsales extends Fragment {
                 Toast.makeText(getActivity(), "Added to Daily Sale Record", Toast.LENGTH_SHORT).show();
 
 
+            }
+        });
+
+        sale_review_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fm = getFragmentManager();
+                Salereview salereview = new Salereview();
+                fm.beginTransaction().replace(R.id.frame, salereview).commit();
             }
         });
 
